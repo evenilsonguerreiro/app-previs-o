@@ -15,7 +15,7 @@ function colocarDadosnatela(dados){
     
     
 }
-cidade.value = ''
+
 
  async function buscarCidade(cidade){
    let dados = await fetch("https://api.openweathermap.org/data/2.5/weather?q=" + 

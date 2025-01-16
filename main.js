@@ -1,8 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 const key = 'cebcd482eda57fa9a6714c1c2ba91885'
-
-
-
-
 
 function colocarDadosnatela(dados){
     document.querySelector('.titulo-principal').innerHTML = 'Tem em ' + dados.name
@@ -11,9 +8,7 @@ function colocarDadosnatela(dados){
     document.querySelector('.icone').src =  "https://openweathermap.org/img/wn/" + dados.weather[0].icon + ".png"
     document.querySelector('.max').innerHTML = Math.floor (dados.main.temp_max , )  +  'max: para hoje'
     document.querySelector('.min').innerHTML = Math.floor (dados.main.temp_min , )  +  'min: para hoje'
-    document.querySelector('.umidade').innerHTML = dados.main.humidity + '% a Umidade'
-    
-    
+    document.querySelector('.umidade').innerHTML = dados.main.humidity + '% a Umidade'   
 }
 
 
@@ -35,7 +30,7 @@ function clicarBotao(){
 
     
     buscarCidade(cidade)
-   
+ 
 }
 
 
